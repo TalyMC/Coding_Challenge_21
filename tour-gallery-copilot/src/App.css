@@ -1,0 +1,173 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TourCard Styles */
+.tour-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tour-card:hover {
+  transform: scale(1.02);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tour-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.tour-details h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.tour-details p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.tour-details h3 {
+  font-size: 1.2rem;
+  color: #1cb52b;
+  margin: 0 0 15px;
+}
+
+.tour-details button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tour-details button:hover {
+  background-color: #cc0000;
+}
+
+/* Header Styles */
+.header {
+  color: #449542;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; /* Needed for the ::after pseudo-element */
+}
+
+/* Gradient border using ::after */
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, white 0%, #dd5050 50%, white 100%);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #509c54;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
